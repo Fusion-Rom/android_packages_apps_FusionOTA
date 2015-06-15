@@ -14,7 +14,7 @@
  *=========================================================================
  */
 
-package com.euphoria.ota.updater;
+package com.fusion.ota.updater;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -42,8 +42,8 @@ import org.xmlpull.v1.XmlPullParserFactory;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-import com.euphoria.center.OTACenter;
-import com.euphoria.ota.R;
+import com.fusion.center.OTACenter;
+import com.fusion.ota.R;
 
 public class UpdateChecker extends AsyncTask<Context, Integer, String> {
     private static final String TAG = "UpdateChecker";
@@ -106,9 +106,9 @@ public class UpdateChecker extends AsyncTask<Context, Integer, String> {
                 String[] line = strLine.split("=");
                 if (line[0].equalsIgnoreCase("ro.product.device")) {
                     strDevice = line[1].trim();
-                } else if (line[0].equalsIgnoreCase("eos.ota.version")) {
+                } else if (line[0].equalsIgnoreCase("fusion.ota.version")) {
                     CurVer = line[1].trim();
-                } else if (strDevice == null && line[0].equalsIgnoreCase("ro.eos.device")){
+                } else if (strDevice == null && line[0].equalsIgnoreCase("ro.fusionsp.device")){
                     strDevice = line[1].trim();
                 }
             }
@@ -165,7 +165,7 @@ public class UpdateChecker extends AsyncTask<Context, Integer, String> {
                     String tempFileName = xpp.getText().trim();
                     String versionOnServer = "";
                     try {
-                        versionOnServer = tempFileName.split("\\-")[5];
+                        versionOnServer = tempFileName.split("\\-")[3];
                         putDataInprefs(mContext, "Filename", versionOnServer);
                         if (versionOnServer.compareToIgnoreCase(CurVer)>0) newFileName = tempFileName;
                     } catch (Exception invalidFileName) {

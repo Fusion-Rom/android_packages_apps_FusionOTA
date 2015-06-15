@@ -13,13 +13,13 @@
  *
  *=========================================================================
  */
-package com.euphoria.center;
+package com.fusion.center;
 
 import java.util.Locale;
 
-import com.euphoria.ota.EuphoriaOTA;
-import com.euphoria.ota.R;
-import com.euphoria.ota.settings.Settings;
+import com.fusion.ota.FusionOTA;
+import com.fusion.ota.R;
+import com.fusion.ota.settings.Settings;
 
 import android.app.Activity;
 import android.app.FragmentManager;
@@ -36,14 +36,14 @@ public class OTACenter extends Activity {
         super.onCreate(savedInstanceState);
 
         getFragmentManager().beginTransaction().replace(android.R.id.content,
-                new EuphoriaOTA()).commit();
+                new FusionOTA()).commit();
         getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.euphoria_center, menu);
+        inflater.inflate(R.menu.fusion_center, menu);
         return true;
     }
 

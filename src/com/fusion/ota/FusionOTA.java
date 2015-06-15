@@ -14,7 +14,7 @@
  *=========================================================================
  */
 
-package com.euphoria.ota;
+package com.fusion.ota;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
@@ -38,12 +38,12 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.euphoria.ota.updater.UpdateChecker;
-import com.euphoria.ota.updater.UpdateListener;
-import com.euphoria.ota.settings.Settings;
+import com.fusion.ota.updater.UpdateChecker;
+import com.fusion.ota.updater.UpdateListener;
+import com.fusion.ota.settings.Settings;
 import com.commonsware.cwac.wakeful.WakefulIntentService;
 
-public class EuphoriaOTA extends PreferenceFragment implements OnSharedPreferenceChangeListener {
+public class FusionOTA extends PreferenceFragment implements OnSharedPreferenceChangeListener {
 
     private static final int ID_DEVICE_NAME = R.id.deviceName;
     private static final int ID_DEVICE_CODE_NAME = R.id.deviceCodename;
@@ -67,7 +67,7 @@ public class EuphoriaOTA extends PreferenceFragment implements OnSharedPreferenc
 
     SharedPreferences prefs;
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.euphoria_ota, container, false);
+        View view = inflater.inflate(R.layout.fusion_ota, container, false);
         return view;
     }
 
@@ -147,13 +147,13 @@ public class EuphoriaOTA extends PreferenceFragment implements OnSharedPreferenc
             String strLine;
             while ((strLine = br.readLine()) != null) {
                 String[] line = strLine.split("=");
-                if (line[0].equalsIgnoreCase("ro.product.device")) {
+                if (line[0].equalsIgnoreCase("ro.fusionsp.device")) {
                     mStrCodename = line[1];
-                } else if (line[0].equalsIgnoreCase("eos.ota.version")) {
+                } else if (line[0].equalsIgnoreCase("fusion.ota.version")) {
                     mStrCurVer = line[1];
                 } else if (line[0].equalsIgnoreCase("ro.product.model")) {
                     mStrDevice = line[1];
-                } else if (line[0].equalsIgnoreCase("ro.modversion")) {
+                } else if (line[0].equalsIgnoreCase("ro.fusionsp.version")) {
                     mStrCurFile = line[1];
                 }
             }
@@ -194,7 +194,7 @@ public class EuphoriaOTA extends PreferenceFragment implements OnSharedPreferenc
     private void addShortCutFragment() {
         FragmentManager fragmentManager = this.getActivity().getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        EuphoriaLinks Links = new EuphoriaLinks();
+        FusionLinks Links = new FusionLinks();
         fragmentTransaction.replace(R.id.linksFragment, Links);
         fragmentTransaction.commit();
     }

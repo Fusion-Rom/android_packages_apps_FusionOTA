@@ -81,16 +81,16 @@
     <string name="donate_title">捐赠</string>
     <string name="donate_summary">捐赠</string>
     <string name="source_title">源码</string>
-    <string name="source_summary">github.com/euphoria-os</string>
-    <string name="center_summary"><b>OTA升级中心</b> 提供了工具和信息，可以更好的提高使用Euphoria-OS的体验。通过<b>OTA升级中心</b>升级到最新版本的Rom。</string>
+    <string name="source_summary">github.com/FusionSP</string>
+    <string name="center_summary"><b>OTA升级中心</b> 提供了工具和信息，可以更好的提高使用Fusion rom的体验。通过<b>OTA升级中心</b>升级到最新版本的Rom。</string>
     <string name="bugreport_title">Bug反馈</string>
     <string name="bugreport_summary">创建一个完整的bug反馈报告</string>
-    <string name="report_infosuccess">创建一个系统报告并提供给Euphoria-OS。你可以在SD卡名字为\"BugReport\"的文件夹里找到该zip压缩文件。</string>
+    <string name="report_infosuccess">创建一个系统报告并提供给Fusion rom。你可以在SD卡名字为\"BugReport\"的文件夹里找到该zip压缩文件。</string>
     <string name="report_infofail">创建Bug反馈报告失败，请重试。</string>
 
-    <string name="about_home_url"><a href="http://mahdi-rom.com/">Euphoria-OS</a></string>
+    <string name="about_home_url"><a href="http://mahdi-rom.com/">Fusion rom</a></string>
     <string name="about_ota">OTA升级中心帮助你\n更好的管理你的Rom！</string>
-    <string name="about_copyright">\u00A9 Copyright Slimroms 2013 modifed for Euphoria-OS</string>
+    <string name="about_copyright">\u00A9 Copyright Slimroms 2013 modifed for Fusion rom</string>
     <string name="about_version">OTACenter 2.0</string>
     <string name="about_contact">联系邮箱Mahdi.Rom@gmail.com</string>
     <string name="about_contact_text">告诉我们你们的想法或反馈bug或者问题</string>
