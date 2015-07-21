@@ -120,7 +120,7 @@ public class FusionLinks extends Fragment {
             } else if (v == mFusionWebsite) {
                 launchUrl(getString(R.string.fusion_website_url));
             } else if (v == mSource) {
-                launchUrl("http://github.com/FusionSP");
+                launchUrl("http://github.com/Fusion-Rom");
             } else if (v == mReport) {
                 bugreport();
             }
