@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="1.03"
         android:orientation="vertical"
-        android:background="@color/background_white"
+        android:background="@color/background_material_dark"
         android:weightSum="1">
 
         <RelativeLayout
@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="168dp"
             android:layout_margin="0dp"
-            android:background="@color/background_white">
+            android:background="@color/background_material_dark">
 
             <TextView
                 android:id="@+id/deviceTitle"
@@ -46,7 +46,7 @@
                 android:layout_marginTop="8dip"
                 android:text="@string/device_title"
                 android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                android:textColor="?android:attr/textColorPrimary"
+                android:textColor="@color/text_color"
                 android:layout_marginLeft="18dp" />
 
             <TextView
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/deviceTitle"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorSecondary"
+                android:textColor="@color/text_color_secondary"
                 android:layout_marginLeft="23dp" />
 
             <TextView
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/deviceName"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorSecondary"
+                android:textColor="@color/text_color_secondary"
                 android:layout_marginLeft="23dp" />
 
             <TextView
@@ -75,7 +75,7 @@
                 android:layout_marginTop="8dip"
                 android:text="@string/curVer"
                 android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                android:textColor="?android:attr/textColorPrimary"
+                android:textColor="@color/text_color"
                 android:layout_marginLeft="18dp" />
 
             <TextView
@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/curVerTitle"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorSecondary"
+                android:textColor="@color/text_color_secondary"
                 android:layout_marginLeft="23dp" />
 
             <TextView
@@ -94,7 +94,7 @@
                 android:layout_below="@id/curVer"
                 android:ellipsize="end"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorSecondary"
+                android:textColor="@color/text_color_secondary"
                 android:layout_marginLeft="23dp" />
 
             <TextView
@@ -105,7 +105,7 @@
                 android:layout_marginTop="8dip"
                 android:text="@string/update_file_title"
                 android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                android:textColor="?android:attr/textColorPrimary"
+                android:textColor="@color/text_color"
                 android:layout_marginLeft="18dp" />
 
             <TextView
@@ -117,7 +117,7 @@
                 android:layout_toRightOf="@id/upToDateTitle"
                 android:ellipsize="end"
                 android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                android:textColor="?android:attr/textColorSecondary" />
+                android:textColor="@color/text_color_secondary" />
 
             <View
                 android:layout_width="fill_parent"

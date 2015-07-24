@@ -26,7 +26,7 @@
         android:showDividers="beginning"
         android:orientation="vertical"
         android:padding="0dp"
-        android:background="@color/background_white">
+        android:background="@color/background_material_dark">
 
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -51,7 +51,7 @@
                     android:paddingLeft="18dp"
                     android:text="@string/short_cut_download_title"
                     android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                    android:textColor="?android:attr/textColorPrimary" />
+                    android:textColor="@color/text_color" />
 
                 </LinearLayout>
 
@@ -62,7 +62,7 @@
                 android:layout_height="30dp"
                 android:text="@string/short_cut_download_uptodate_summary"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorSecondary" />
+                android:textColor="@color/text_color_secondary" />
 
         </LinearLayout>
 
@@ -92,7 +92,7 @@
                     android:paddingLeft="18dp"
                     android:text="@string/short_cut_changelog_title"
                     android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                    android:textColor="?android:attr/textColorPrimary"
+                    android:textColor="@color/text_color"
                     android:clickable="false" />
 
             </LinearLayout>
@@ -104,7 +104,7 @@
                 android:paddingLeft="23dp"
                 android:text="@string/short_cut_changelog_summary"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorSecondary" />
+                android:textColor="@color/text_color_secondary" />
 
         </LinearLayout>
 
@@ -133,7 +133,7 @@
                     android:paddingLeft="18dp"
                     android:text="@string/short_cut_download_gapps_title"
                     android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                    android:textColor="?android:attr/textColorPrimary" />
+                    android:textColor="@color/text_color" />
 
             </LinearLayout>
 
@@ -143,7 +143,7 @@
                 android:paddingLeft="23dp"
                 android:text="@string/short_cut_download_gapps_summary"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorSecondary" />
+                android:textColor="@color/text_color_secondary" />
 
         </LinearLayout>
 
@@ -173,7 +173,7 @@
                     android:paddingLeft="18dp"
                     android:text="@string/fusion_website_title"
                     android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                    android:textColor="?android:attr/textColorPrimary" />
+                    android:textColor="@color/text_color" />
 
             </LinearLayout>
 
@@ -184,7 +184,7 @@
                 android:paddingLeft="23dp"
                 android:text="@string/fusion_website_summary"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorSecondary" />
+                android:textColor="@color/text_color_secondary" />
 
         </LinearLayout>
 
@@ -213,7 +213,7 @@
                     android:paddingLeft="18dp"
                     android:text="@string/source_title"
                     android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                    android:textColor="?android:attr/textColorPrimary" />
+                    android:textColor="@color/text_color" />
 
             </LinearLayout>
 
@@ -223,7 +223,7 @@
                 android:paddingLeft="23dp"
                 android:text="@string/source_summary"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorSecondary" />
+                android:textColor="@color/text_color_secondary" />
 
         </LinearLayout>
 
@@ -252,7 +252,7 @@
                     android:paddingLeft="18dp"
                     android:text="@string/bugreport_title"
                     android:textAppearance="@android:style/TextAppearance.Material.Subhead"
-                    android:textColor="?android:attr/textColorPrimary" />
+                    android:textColor="@color/text_color" />
 
             </LinearLayout>
 
@@ -262,7 +262,7 @@
                 android:paddingLeft="23dp"
                 android:text="@string/source_summary"
                 android:textAppearance="@android:style/TextAppearance.Material.Body1"
-                android:textColor="?android:attr/textColorSecondary" />
+                android:textColor="@color/text_color_secondary" />
 
         </LinearLayout>
 
